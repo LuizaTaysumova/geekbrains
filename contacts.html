@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="shortcut icon" href="img/icon.jpeg">
+</head>
+
+<body>
+    <header>
+        <h1>Karaktero</h1>
+        <h2>Магазин характера и настроения</h2>
+        <ul class="menu_top">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog/catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </header>
+
+    <hr>
+
+    <h1>Контакты</h1>
+    <p>Ты определился с выбором? <br>Тогда оставь заявку и ожидай получения характера!</p>
+    <h2>Можете позвонить нашим менеджерам. Они ждут твоего звонка:</h2>
+    <ul>
+        <li>Добрыня Никитич: <a href="tel:+79684756789">+79684756789</a></li>
+        <li>Змей Горыныч: <a href="tel:+79685789045">+79685789045</a></li>
+    </ul>
+    <p><b>ИЛИ</b></p>
+    <form action="#">
+        <fieldset>
+            <legend>Отправить заявку через форму обратной связи</legend>
+            <ol>
+                <li><b>Твое имя: </b><input type="text" placeholder="Вася Пупкин" required></li>
+                <li><b>Номер телефона: </b><input type="number" placeholder="+79680000000" required></li>
+                <li><b>Пол: </b>
+                    М<input type="radio" name="gender" checked>
+                    Ж<input type="radio" name="gender">
+                </li>
+                <li><b>Твой адрес: </b><input type="text"></li>
+                <li><b>Твои увлечения: </b>
+                    <ul>
+                        <li><input type="checkbox" checked> Спорт</li>
+                        <li><input type="checkbox"> Музыка</li>
+                        <li><input type="checkbox" checked> Компьютеры</li>
+                        <li><input type="checkbox"> Кино</li>
+                        <li><input type="checkbox"> Путешествия</li>
+                        <li><input type="checkbox"> Наука</li>
+                        <li><input type="checkbox"> Другое <input type="text"></li>
+                    </ul>
+                </li>
+                <li><b>В какое время удобно пообщаться по деталям заказа:</b>
+                    <select name="Время" id="time">
+                    <option value="time_item">Будни: c 8:00 до 18:00</option>
+                    <option value="time_item">Выходные: c 8:00 до 18:00</option>
+                    <option value="time_item">Будни: c 18:00 до 23:00</option>
+                    <option value="time_item">Выходные: c 18:00 до 23:00</option>
+                    </select>
+                </li>
+                <li><b>E-mail: </b><input type="email"></li>
+                <li><b>Можно добавить комментарий: </b><br>
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+                </li>
+            </ol>
+
+            <input type="submit" value="Готово">
+            <input type="reset">
+
+        </fieldset>
+    </form>
+
+
+    <h2>Наш адрес:</h2>
+    <p>Тридесятое царство, Тридевятое государство, Изумрудный город, улица им.Кощея Бессмертного, Избушка на курьих ножках №35</p>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3d9c39842a2463fb914ae21cae4a45791da42acb97e51109a6f4fdc2a6216f5&amp;width=537&amp;height=355&amp;lang=ru_RU&amp;scroll=true"></script>
+    <hr>
+    <footer>&copy; «Все права защищены»</footer>
+</body>
+
+</html>
