@@ -1,0 +1,206 @@
+body {
+    background-color: #f8f8f8;
+
+    margin: 1em;
+}
+
+span:nth-child(1) {
+    color: chartreuse;
+    padding-right: 7px;
+}
+
+span:nth-child(2) {
+    color: #860;
+    padding-right: 7px;
+}
+
+span:nth-child(3) {
+    color: #880;
+    padding-right: 7px;
+}
+
+span:nth-child(4) {
+    color: #080;
+    padding-right: 7px;
+}
+
+span:nth-child(5) {
+    padding-right: 7px;
+}
+
+span:nth-child(6) {
+    color: #800;
+    padding-right: 7px;
+}
+
+span:nth-child(7) {
+    color: #ad2f18;
+    padding-right: 7px;
+}
+
+span:nth-child(8) {
+    color: blue;
+    padding-right: 7px;
+}
+
+span:nth-child(9) {
+    color: #080;
+}
+
+header {
+    text-align: center;
+}
+
+#menu_top li {
+    display: inline-block;
+    background-color: navy;
+}
+
+#menu_top li:hover {
+    background-color: whitesmoke;
+    outline: 4px solid black;
+}
+
+#menu_top {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+#menu_top a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 2em;
+    font-family: fantasy;
+    padding: 1em;
+}
+
+.itemHead {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.itemDesc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detailDesc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.itemChar + ul li {
+    list-style-position: inside;
+    list-style-image: url(img/mark.jpg);
+    color:cornflowerblue;
+    padding: 8px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+
+.charUsers {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure img {
+    outline: 3px solid darkblue;
+}
+
+h3 + a {
+    outline: 4px solid darkgreen;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    color: rebeccapurple;
+    font-size: 16px;
+    font-weight: 700;
+    width: 30em;
+    height: 1.2em;
+    margin: 0.3em;
+}
+
+h1, h2, h3{
+    color: darkblue;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    line-height: 1.5em;
+    margin: 0 auto;
+    
+}
+
+input[type="submit"], input[type="reset"] {
+    font-size: 1.5em;
+    color: darkblue;
+    background-color: white;
+    font-weight: bold;
+    border: black solid 2px;
+}
+
+legend {
+    color: darkblue;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+ol {
+    text-align: left;
+    font-weight: bold;
+}
+
+#map {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#contacts {
+    font-weight: 600;
+    text-align: center;
+}
+
+#catalog_menu {
+    font-size: 1.5em;
+    text-align: center;
+    width: 10%;
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.promo {
+    color: green;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+}
+
+.similarItems li {
+    text-align: center;
+    list-style-type: none;
+}
+
+footer {
+    background-color: darkgray;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+}
