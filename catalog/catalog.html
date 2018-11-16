@@ -8,42 +8,38 @@
     <link rel="stylesheet" href="../style.css" type="text/css"> </head>
 
 <body>
-    <header>
-        <h1><span>K</span><span>a</span><span>R</span><span>a</span><span>K</span><span>t</span><span>E</span><span>r</span><span>O</span><br>Магазин характера и настроения</h1>
-
-        <ul id="menu_top">
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="../contacts.html">Контакты</a></li>
-        </ul>
-    </header>
-    <hr>
-    <h2>Каталог</h2>
-    
-    <ul id="catalog_menu">
-        <li><img src="../img/kindness.jpg" alt="Доброта" width="180" height="140">
-            <a href="kindness.html">
-                <br>Доброта</a>
-        </li>
-        <br>
-        <li><img src="../img/anger.jpg" alt="Злость" width="180" height="100">
-            <a href="anger.html">
-                <br>Злость</a>
-        </li>
-        <br>
-        <li><img src="../img/distraction.jpg" alt="Рассеянность" width="170" height="160">
-            <a href="distraction.html">
-                <br>Рассеяность</a>
-        </li>
-        <br>
-        <li><img src="../img/honesty.jpg" alt="Честность" width="170" height="140">
-            <a href="honesty.html">
-                <br>Честность</a>
-        </li>
-        <br> </ul>
-    <p class="promo">В скором времени ожидается поставка новых товаров!</p>
-    <hr>
-    <footer>&copy; «Все права защищены»</footer>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo"><img src="../img/icon.jpeg" alt="#"><span>K</span><span>a</span><span>R</span><span>a</span><span>K</span><span>t</span><span>E</span><span>r</span><span>O</span><br>Магазин характера и настроения</h1>
+            <ul class="menu_top">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="content">
+            <h1>Каталог</h1>
+            <div id="catalogMenu">
+                <div class="catalogItem">
+                    <a href="honesty.html"><img src="../img/honesty.jpg" alt="Честность" width="170" height="150">Честность</a>
+                </div>
+                <div class="catalogItem">
+                    <a href="kindness.html"><img src="../img/kindness.jpg" alt="Доброта" width="180" height="140">Доброта</a>
+                </div>
+                <div class="catalogItem">
+                    <a href="distraction.html"><img src="../img/distraction.jpg" alt="Рассеянность" width="170" height="160">Рассеяность</a>
+                </div>
+                <div class="catalogItem">
+                    <a href="anger.html"><img src="../img/anger.jpg" alt="Злость" width="180" height="100"> Злость</a>
+                </div>
+            </div>
+            <p class="promo">В скором времени ожидается поставка новых товаров!</p>
+            <hr> </div>
+        <div class="footer">
+            <p class="copyright"> &copy;&nbsp;«Все права защищены» 2018 </p>
+        </div>
+    </div>
 </body>
 
 </html>
