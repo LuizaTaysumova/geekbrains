@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+html,
 body {
     background-color: #f8f8f8;
+    height: 100%;
+}
 
-    margin: 1em;
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 span:nth-child(1) {
@@ -45,47 +54,77 @@ span:nth-child(8) {
 
 span:nth-child(9) {
     color: #080;
+    padding-right: 7px;
 }
 
-header {
-    text-align: center;
+.header {
+    height: 100px;
+    background: url(img/headerback.JPG);
+    flex: 0 0 auto;
 }
 
-#menu_top li {
-    display: inline-block;
-    background-color: navy;
+.logo {
+    float: left;
+    background-color: white;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+    padding: 0.1em;
 }
 
-#menu_top li:hover {
-    background-color: whitesmoke;
-    outline: 4px solid black;
-}
-
-#menu_top {
+.menu_top {
     list-style-type: none;
-    margin: 0 auto;
+    padding: 2em;
+    float: right;
+    overflow: hidden;
 }
 
-#menu_top a {
+.menu_top a {
     text-decoration: none;
-    color: aqua;
+    color: cyan;
     font-size: 2em;
     font-family: fantasy;
     padding: 1em;
 }
 
-.itemHead {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #eaeaea;
+.menu_top li {
+    display: inline-block;
+    background-color: navy;
+}
+
+.menu_top li:hover {
+    background-color: whitesmoke;
+    outline: 4px solid black;
+    color: navy;
+}
+
+.menu_top a:hover {
+    color: navy;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 .itemDesc {
     color: #707070;
     font-size: 14px;
-    font-style: italic;
     line-height: 16px;
+    width: 60%;
+    float: left;
+    padding: 0.3em;
+}
+
+.itemHead {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #eaeaea;
+    padding: 0.5em;
+}
+
+.itemChar {
+    float: right;
+    width: 38%;
 }
 
 .detailDesc {
@@ -96,20 +135,20 @@ header {
     text-align: left;
 }
 
-.itemChar + ul li {
+.itemChar ul li {
     list-style-position: inside;
     list-style-image: url(img/mark.jpg);
-    color:cornflowerblue;
+    color: cornflowerblue;
     padding: 8px;
     font-style: italic;
     font-weight: 600;
     text-align: left;
 }
 
-
-
 .charUsers {
     text-align: center;
+    margin: 3em;
+    border-top: 4px solid black;
 }
 
 figure {
@@ -120,11 +159,39 @@ figure img {
     outline: 3px solid darkblue;
 }
 
-h3 + a {
+.itemDesc a {
     outline: 4px solid darkgreen;
+    float: left;
+    margin-bottom: 2em;
+    margin-right: 2em;
 }
 
-input[type="text"], input[type="number"], input[type="email"] {
+
+/*для картинки в описании товара*/
+
+.itemDesc {
+    overflow: hidden;
+}
+
+.itemDesc a:hover {
+    outline: none;
+}
+
+
+/*для картинки в описании товара*/
+
+.detailDesc p:first-letter,
+.itemDesc p:first-letter {
+    color: brown;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 1.4em;
+    font-family: 'Parisienne', cursive;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
     color: rebeccapurple;
     font-size: 16px;
     font-weight: 700;
@@ -133,24 +200,59 @@ input[type="text"], input[type="number"], input[type="email"] {
     margin: 0.3em;
 }
 
-h1, h2, h3{
-    color: darkblue;
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+input[type="email"]:focus {
+    color: midnightblue;
+    background-color: cornsilk;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+    color: midnightblue;
     text-align: center;
+    clear: both;
 }
 
 form {
-    width: 50%;
+    width: 45%;
     line-height: 1.5em;
     margin: 0 auto;
-    
 }
 
-input[type="submit"], input[type="reset"] {
-    font-size: 1.5em;
+fieldset {
+    border-radius: 9%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1.3em;
     color: darkblue;
     background-color: white;
     font-weight: bold;
-    border: black solid 2px;
+    border: black solid 1px;
+    cursor: pointer;
+}
+
+input[type="button"] {
+    background-color: whitesmoke;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    color: darkred;
+    background-color: aliceblue;
+    outline: 1px solid black;
 }
 
 legend {
@@ -165,8 +267,9 @@ ol {
 }
 
 #map {
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
+    height: 374px;
 }
 
 #contacts {
@@ -174,7 +277,7 @@ ol {
     text-align: center;
 }
 
-#catalog_menu {
+#catalogMenu {
     font-size: 1.5em;
     text-align: center;
     width: 10%;
@@ -182,6 +285,49 @@ ol {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+}
+
+.catalogItem a {
+    text-decoration: none;
+}
+
+table {
+    border: 1.5px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.tableH1 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+td {
+    border: 1.5px solid #000;
+    vertical-align: bottom;
+    padding: 0.3em;
+}
+
+thead {
+    line-height: 1.5em;
+}
+
+thead tr:first-child {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.version {
+    font-weight: 600;
+    font-style: italic;
+    /*заголовок с версиями в таблице*/
+}
+
+tbody td:first-child {
+    font-weight: 600;
+    text-align: left;
 }
 
 .promo {
@@ -197,10 +343,16 @@ ol {
     list-style-type: none;
 }
 
-footer {
+.footer {
     background-color: darkgray;
     font-weight: bold;
-    padding: 1em;
-    margin: 0;
-    text-align: center;
+    height: 3em;
+    margin: 0 auto;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.copyright {
+    float: right;
+    padding-right: 1em;
 }
